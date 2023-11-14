@@ -1,0 +1,116 @@
+*{
+    font-family: 'Creepster', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../Recursos/fondo.avif);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-color: #890AF7;
+}
+.enlaces{
+    display: flex;
+    padding: 20px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces img {
+    height: 100px; 
+}
+.enlaces-nav{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: flex-end;
+}
+
+ul{
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:700px)
+{
+    .enlaces-nav ul {
+        display: inline-block;
+        background-color: #4B0069 ;
+    }
+
+    .ocultar {
+        display: none;
+    }
+}
+
+
+h1{
+    font-size: 50px;
+    margin: 30px;
+    text-align: center;
+}
+
+#cardsMonstruos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.card {
+    margin: 20px 0px;
+    border: 3px solid black;
+    border-color: #FF792A;
+    background-color: orange;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.card div {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.nombre{
+    padding-left: 20px;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: Creepster;
+    src: url(../Recursos/fonts/Creepster-Regular.ttf);
+}
+
+p{
+    font-size: 20px;
+}
+
+
+
+

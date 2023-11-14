@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="../Js/logica.js" type="module" defer></script>
+    <title>Monstruos</title>
+</head>
+<body>
+    <header>
+        <div class="div-content">
+            <div class="logo">
+                <img src="../Recursos/logo.png" alt="logo" class="ocultar">
+            </div>
+            <nav class="enlaces-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">Monstruos</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="divTitulo">
+        <h1>CRUD MONSTRUOS</h1>
+    </div>
+    <main>
+        <section>
+            <form class="formulario">
+                <fieldset>
+                    <h2>INFORMACIóN DEL MONSTRUO</h2>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="inputNombre" placeholder="Ingrese un nombre" required maxlength="15" pattern="[A-Za-z]+" title="Solo se permiten letras y un maximo de 15 caracteres">
+        
+                    <div class="div-iconos">
+                        <img src="../Recursos/mask.svg" alt="icono de mascara">
+                        <label for="alias">Alias</label>
+                    </div>
+                        <input type="text" id="alias" name="inputAlias" placeholder="Ingrese un alias" required maxlength="10" pattern="[A-Za-z]+" title="Solo se permiten letras y un maximo de 10 caracteres">
+                    
+                    <div class="div-iconos">
+                        <img src="../Recursos/blood.svg" alt="icono de cuchillo">
+                        <label for="defensa">Defensa</label>
+                    </div>             
+                    
+                    <div class="div-radio">
+                        <label for="pocion">Pocion</label><input class="rdb" type="radio" id="pocion" name="rdbDefensa" value="Pocion">
+                        <label for="crucifijo">Crucifijo</label><input class="rdb" type="radio" id="crucifijo" name="rdbDefensa" value="Crucifijo">
+                        <label for="estaca">Estaca</label><input class="rdb" type="radio" id="estaca" name="rdbDefensa" value="Estaca">
+                        <label for="plata">Plata</label><input class="rdb" type="radio" id="plata" name="rdbDefensa" value="Plata" checked required>
+                    </div>
+                    
+                    <div class="div-iconos">
+                        <img src="../Recursos/horror.svg" alt="icono de pocion">
+                        <label for="miedo">Miedo:</label>
+                    </div>
+                    <input type="range" id="miedo" name="inputMiedo" min="0" max="100" step="1" value="50" required>
+
+                    <div class="div-iconos">
+                        <img src="../Recursos/magic.svg" alt="icono de sombrero"> 
+                        <label for="tipo">Tipo</label>
+                    </div>
+                    <select name="selectTipo" id="tipo" required></select>
+
+                    <fieldset>
+                        <legend>Postres Favoritos</legend>
+                        <input type="checkbox" class="check" name="ckbPostre" value="tiramisu" checked><label>Tiramisu<label><br>
+                        <input type="checkbox" class="check" name="ckbPostre" value="red velvet"><label>Red Velvet</label><br>
+                        <input type="checkbox" class="check" name="ckbPostre" value="helado"><label>Helado</label><br>
+                    </fieldset>
+                    
+                    <input type="submit" value="Guardar" id="btnSubmit"> <!--o modificar-->
+                    <input type="button" value="Eliminar" id="btnEliminar" class="oculto">
+                    <input type="button" value="Cancelar" id="btnCancelar" class="oculto">
+                    <input type="hidden" name="inputId">
+
+                </fieldset>
+            </form>
+        </section>
+    <div id ="divSpinner">
+        <img src="../Recursos/spinner.gif" id="spinner" class="oculto">
+    </div>
+    <section>
+        <div id ="divTabla"></div>
+    </section>
+    <!-- <dialog id="alertCustom">
+        <button id="btnCerrar"><i class="fas fa-window-close"></i></button>
+    </dialog>
+    <button id="btnOpen">Abrir modal</button> -->
+    </main>
+    <footer>
+        <nav class="enlaces-footer">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Monstruos</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Laboraotrio III - Todos los derechos reservados en 2023&copy;</p>
+    </footer>
+</body>
+</html>

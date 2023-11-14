@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 150px;
+    display: flex;
+    background-image: url(../Recursos/headerFondo.png);
+    background-position: center;
+    background-size:cover;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+body{
+    background-image: url(../Recursos/bodyFondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1{
+    margin: 20px;
+}
+
+.divTitulo{
+    height: 80px;
+    background: linear-gradient(to right, #BA0106, #E10367); 
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+   height: 150px; 
+}
+
+.div-content{
+    display: flex;
+    padding: 20px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.enlaces-nav a {
+    font-size: 25px;
+}
+
+.enlaces-footer a{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li{
+    margin-right: 25px;
+}
+
+@media screen and (max-width:700px)
+{
+    .enlaces-nav ul , .enlaces-footer ul{
+        display: inline-block;
+        background-color: rgb(199, 18, 42);
+    }
+
+    .ocultar{
+        display: none;
+    }
+}
+
+/*******************FORMULARIO*****************************/
+
+.formulario {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    padding: 20px;
+}
+
+h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: azure;
+}
+
+h1,h2,label,a,p,legend{
+    font-family: 'Nighmare', monospace;
+    color: azure;
+}
+
+@font-face {
+    font-family: Nighmare;
+    src: url(../Recursos/fonts/NITEMARE.TTF);
+}
+
+label {
+    margin-bottom: 5px; 
+    font-size: 25px;
+}
+
+input[type="text"],
+input[type="range"],
+select {
+    height: 30px;
+    width: 100%;
+    border-radius: 8px;
+    border-color: aliceblue;
+    border: solid aliceblue;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+legend{
+    font-size: 25px;
+}
+.div-iconos{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.div-iconos img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.div-radio{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.rdb{
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+.div-radio label {
+    margin-right: 30px;
+}
+
+#miedo{
+    margin:0;
+}
+
+#divSpinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+#divSpinner img{
+    height: 200px;
+    width: 200px;
+}
+.oculto{
+    display: none;
+}
+
+/********************BOTONES*********************/
+#btnSubmit {
+    background-color: #690060; 
+    border-color: #690060; 
+    background-image: url(../Recursos/save.ico);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    height: 40px;
+    width: 130px;
+    text-align:center;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#btnEliminar {
+    margin-top: 10px;
+    background-color:#8F0700;
+    border-color: #8F0700;
+    color: aliceblue;
+    height: 40px;
+    width: 85px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#btnCancelar {
+    margin-top: 10px;
+    background-color: #290069;
+    border-color: #290069;
+    color: aliceblue;
+    height: 40px;
+    width: 85px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/*******************TABLA************************/
+thead {
+    background-color: #FF9101;
+}
+
+th,td{
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Nighmare', monospace;
+    border-bottom: #7840EC 2px solid;
+    text-transform: capitalize;
+    color: black;
+}
+
+tr:hover td {
+    background-color:#9C7DFF;
+    color: white;
+}
+
+td {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+tbody {
+    cursor: pointer;
+}
+
+/****************PIE DE PAGINA******************/
+footer {
+    height: 80px;
+    display: flex;
+    background-color:#D43602;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
